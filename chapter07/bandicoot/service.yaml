@@ -1,0 +1,29 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: "2021-07-26T14:28:46Z"
+  labels:
+    app: bandicoot-prod
+    env: prod
+    ver: "2"
+  name: bandicoot-prod
+  namespace: default
+  resourceVersion: "57512"
+  uid: 7401c1a8-de8d-4f19-a309-a3cdd96ea88d
+spec:
+  clusterIP: 10.109.130.120
+  clusterIPs:
+  - 10.109.130.120
+  ipFamilies:
+  - IPv4
+  ipFamilyPolicy: SingleStack
+  ports:
+  - port: 8080
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: bandicoot-prod
+  sessionAffinity: None
+  type: ClusterIP
+status:
+  loadBalancer: {}
