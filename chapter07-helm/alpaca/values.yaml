@@ -1,0 +1,13 @@
+revision: "2"
+metadata:
+  annotations:
+    revision: "2"
+  labels:
+    app: alpaca-prod-helm
+    ver: "1"
+    env: "prod"
+  image:
+    tag: blue
+  name: alpaca-prod
+spec:
+  replicas: 3

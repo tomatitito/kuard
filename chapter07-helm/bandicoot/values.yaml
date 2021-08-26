@@ -1,0 +1,8 @@
+metadata:
+  annotations:
+    deployment.kubernetes.io/revision: "1"
+labels:
+  app: bandicoot-prod-helm
+  ver: 2
+image:
+  tag: green
